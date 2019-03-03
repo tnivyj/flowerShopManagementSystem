@@ -1,0 +1,44 @@
+ul.oe_menu{
+    background-color: #B0DCD5;
+    text-align: center;
+/*    font-size: 0;*/
+}
+ul.oe_menu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ul.oe_menu > li{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; 
+    /* down */
+}
+ul.oe_menu > li > a{
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: #B0DCD5;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none; /*去链接下划线*/
+}
+ul.oe_menu > li > a:hover {
+    background-color: #87C1B8;
+}
+ul.oe_menu > li > a.visitor { /*正在浏览的页面*/
+    background-color: #1EA084;
+}
+ul.oe_menu > li > a.en {
+    background-color: #87C1B8;
+}
+ul.oe_menu > li ul {
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    font-size: 14px;
+}
+#title{
+    height: 100px;
+}
